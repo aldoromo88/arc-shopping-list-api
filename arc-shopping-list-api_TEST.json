@@ -1,0 +1,127 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2017-10-18T17:25:48.454Z",
+	"__export_source": "insomnia.desktop.app:v5.9.6",
+	"resources": [
+		{
+			"_id": "wrk_332c286b357d40c187adad545532b671",
+			"parentId": null,
+			"modified": 1508346726710,
+			"created": 1508346726710,
+			"name": "arc-shopping-list-api",
+			"description": "",
+			"certificates": [],
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_b0ff241a653c459fbeaaba949417353b",
+			"parentId": "wrk_332c286b357d40c187adad545532b671",
+			"modified": 1508346726723,
+			"created": 1508346726723,
+			"name": "Base Environment",
+			"data": {},
+			"color": null,
+			"isPrivate": false,
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_21b633db80614753999c897df79435eb",
+			"parentId": "wrk_332c286b357d40c187adad545532b671",
+			"modified": 1508346726713,
+			"created": 1508346726713,
+			"name": "Default Jar",
+			"cookies": [],
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_c6049ae68e734756a0a94accf8a30ae1",
+			"parentId": "wrk_332c286b357d40c187adad545532b671",
+			"modified": 1508346743722,
+			"created": 1508346739611,
+			"url": "http://localhost:8000/api/product",
+			"name": "GetAllProducts",
+			"description": "",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1508346739611,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_037960214bf7496785665b8073137ec8",
+			"parentId": "wrk_332c286b357d40c187adad545532b671",
+			"modified": 1508346760043,
+			"created": 1508346755834,
+			"url": "http://localhost:8000/api/product/1",
+			"name": "GetProductById",
+			"description": "",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1508346755834,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_cc6fd54575124d74a40b1be1031b98a1",
+			"parentId": "wrk_332c286b357d40c187adad545532b671",
+			"modified": 1508346841436,
+			"created": 1508346795006,
+			"url": "http://localhost:8000/api/product/4",
+			"name": "CreateNewProduct",
+			"description": "",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"Name\": \"Product four\",\n\t\"Price\": 4400\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_29f7fe708dea49e69a8b4f93dcd672f3"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1508346795006,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_3a9f8107b9ac46de8a57f716d29eef85",
+			"parentId": "wrk_332c286b357d40c187adad545532b671",
+			"modified": 1508346889472,
+			"created": 1508346886467,
+			"url": "http://localhost:8000/api/product/4",
+			"name": "DeleteProduct",
+			"description": "",
+			"method": "DELETE",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1508346886467,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		}
+	]
+}
